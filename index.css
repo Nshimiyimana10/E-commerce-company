@@ -1,0 +1,192 @@
+*p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  height: 100vh;
+  position: relative;
+}
+
+.main-container {
+  max-width: 1000px;
+  height: 100vh;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1000px;
+}
+
+.left-side {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  position: absolute;
+  left: 100px;
+}
+
+.left-side img {
+  width: 100px;
+  height: 15px;
+  position: absolute;
+  top: 15px;
+  margin-top: 3px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+}
+
+.image-2 {
+  width: 35px;
+  height: 35px;
+  top: 15px;
+  margin-top: 15px;
+}
+
+.image-1 {
+  width: 25px;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.right-side {
+  display: flex;
+  gap: 30px;
+}
+
+.main-sneaker {
+  width: 460px;
+  height: 250x;
+  border-radius: 10px;
+}
+.sneakers-list img {
+  width: 100px;
+  height: 100px;
+}
+
+.sneakers-list {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  gap: 60px;
+}
+
+.right-container {
+  width: 460px;
+  margin-top: 70px;
+}
+
+.sneakers-description p {
+  font-size: 13px;
+  color: hsl(219, 9%, 45%);
+  line-height: 20px;
+}
+
+.price-promotion {
+  display: flex;
+  position: relative;
+}
+
+.price-promotion button {
+  width: 35px;
+  height: 17px;
+  border: none;
+  border-radius: 4px;
+  flex-direction: row;
+  position: absolute;
+  bottom: 23px;
+  left: 100px;
+  background-color: hsl(220, 13%, 13%);
+  color: white;
+  font-size: 12px;
+}
+
+.price-promotion p {
+  font-size: 3px;
+}
+
+.sneakers-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-btn {
+  width: 100px;
+  height: 30px;
+  background-color: hsl(223, 64%, 98%);
+  border: none;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.second-btn {
+  width: 150px;
+  height: 30px;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  font-size: 12px;
+}
+
+.second-btn img {
+  width: 15px;
+  height: 8px;
+  color: black;
+}
+
+.order-section {
+  display: flex;
+  gap: 15px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.left-container {
+  display: flex;
+  margin-left: 40px;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.sneakers-description h6 {
+  color: hsl(219, 9%, 45%);
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .left-side,
+  .right-side {
+    font-display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main .right-container,
+  .left-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
